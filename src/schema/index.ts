@@ -9,22 +9,8 @@ import {
     GraphQLSchema,
     GraphQLString,
   } from 'graphql'
-  
-  const userType = new GraphQLObjectType({
-    name: 'User',
-    description: 'A user in the system',
-    fields: () => ({
-      id: {
-        type: new GraphQLNonNull(GraphQLID),
-        description: 'A unique id for a user',
-        resolve: (item) => item.id
-      },
-      email: {
-        type: new GraphQLNonNull(GraphQLString),
-        description: 'The email address of the user'
-      }
-    })
-  })
+
+  import { userType } from './user';
   
   var queryType = new GraphQLObjectType({
     name: 'Query',
