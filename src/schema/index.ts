@@ -10,7 +10,7 @@ import {
     GraphQLString,
   } from 'graphql'
 
-  import { userType } from './user';
+  import { userType, userInputType } from './user';
   
   var queryType = new GraphQLObjectType({
     name: 'Query',
