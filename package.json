@@ -1,0 +1,23 @@
+{
+  "name": "node-graphql-testing",
+  "version": "1.0.0",
+  "description": "graphql testing",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch & nodemon dist",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "tsc": "tsc"
+  },
+  "author": "kyle swartz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.1",
+    "nodemon": "^1.17.2"
+  }
+}
